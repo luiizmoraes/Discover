@@ -28,10 +28,8 @@
 }
 
 body {
-    background-image: var(--bg-url);
-    background-repeat: no-repeat;
-    background-position: top  center;
-    background-size: cover;
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -40,10 +38,11 @@ body * {
 }
 
 #container-content {
-    width: 360px;
-    height: 712px;
-    margin: auto;
-    padding-top: 56px;
+    width: 100%;
+    max-width: 588px;
+    min-width: 320px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
 }
 
 #content-profile {
@@ -254,3 +253,13 @@ footer a:hover {
     font-size: 24px;
 }
 
+/*media queries*/
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
