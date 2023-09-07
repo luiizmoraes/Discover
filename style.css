@@ -28,7 +28,7 @@
 }
 
 body {
-    background: var(--bg-url) no-repeat top center/cover;
+    background: var(--bg-url) repeat-y top center/cover;
     height: 100vh;
 }
 
