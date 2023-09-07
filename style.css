@@ -253,6 +253,10 @@ footer a:hover {
     font-size: 24px;
 }
 
+.texto-reduzido {
+    font-size: 12px;
+}
+
 /*media queries*/
 @media (min-width: 700px) {
     :root {
@@ -261,5 +265,11 @@ footer a:hover {
 
     .light {
         --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
+
+@media (min-width: 1440px) {
+    .texto-reduzido {
+        font-size: 14px;
     }
 }
